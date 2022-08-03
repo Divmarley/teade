@@ -1,0 +1,62 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}Track order{% endblock title %}
+{% block style %}
+
+{% endblock style %}
+{% block content %} 
+        <!-- Header Start -->
+        <div class="jumbotron jumbotron-fluid mb-5">
+            <div class="container text-center py-5">
+                <h1 class="text-white display-3">Track Orders</h1>
+                <div class="d-inline-flex align-items-center text-white">
+                    <p class="m-0"><a class="text-white" href="">Home</a></p>
+                    <i class="fa fa-circle px-3"></i>
+                    <p class="m-0">Track-orders</p>
+                </div>
+            </div>
+        </div>
+        <!-- Header End -->
+        <div class="container">
+            <article class="card">
+                <header class="card-header"> My Orders / Tracking </header>
+                <div class="card-body">
+                    <h6>Order ID: OD45345345435</h6>
+                    <article class="card">
+                        <div class="card-body row">
+                            <div class="col"> <strong>Estimated Delivery time:</strong> <br>29 nov 2019 </div>
+                            <div class="col"> <strong>Shipping BY:</strong> <br> BLUEDART, | <i class="fa fa-phone"></i> +1598675986 </div>
+                            <div class="col"> <strong>Status:</strong> <br> Picked by the courier </div>
+                            <div class="col"> <strong>Tracking #:</strong> <br> BD045903594059 </div>
+                        </div>
+                    </article>
+                    <div class="track">
+                        <div class="step active"> <span class="icon"> <i class="fa fa-check"></i> </span> <span class="text">Order confirmed</span> </div>
+                        <div class="step active"> <span class="icon"> <i class="fa fa-user"></i> </span> <span class="text"> Picked by courier</span> </div>
+                        <div class="step"> <span class="icon"> <i class="fa fa-truck"></i> </span> <span class="text"> On the way </span> </div>
+                        <div class="step"> <span class="icon"> <i class="fa fa-box"></i> </span> <span class="text">Ready for pickup</span> </div>
+                    </div>
+                    <hr>
+                    <ul class="row">
+                        <li class="col-md-4">
+                            <figure class="itemside mb-3">
+                                <div class="aside"><img src="https://media.istockphoto.com/photos/cardboard-box-isolated-on-white-background-with-clipping-path-picture-id1282219840?k=20&m=1282219840&s=612x612&w=0&h=y4oAVteVTDVs153y_Qqop1v33aXuYByaNTIO9fUQP9A=" class="img-sm border"></div>
+                                <figcaption class="info align-self-center">
+                                    <p class="title">Dell Laptop with 500GB HDD <br> 8GB RAM</p> <span class="text-muted">$950 </span>
+                                </figcaption>
+                            </figure>
+                        </li>
+                         
+                    </ul>
+                    <hr>
+                    <a href="{% url 'web:index' %}" class="btn btn-warning" data-abc="true"> <i class="fa fa-chevron-left"></i> Back to orders</a>
+                </div>
+            </article>
+        </div>
+    
+        <!-- Contact Start -->
+      
+        <!-- Contact End -->
+    
+  
+{% endblock content %}
